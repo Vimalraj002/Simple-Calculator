@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h1 class="heading">SIMPLE CALCULATOR</h1>
+
+    <div class="container">
+
+            <table>
+
+                <!-- Display Box -->
+                <tr>
+                    <td colspan="3"> <input type="text" class="disp-box" id="result" placeholder="0"></td>
+                    <td> <input type="button" value="C" onclick="clearScreen()" class="clear-btn"></td>
+                </tr>
+
+                <!-- Values and Operators -->
+
+                    <!-- Row 1 -->
+                    <tr>
+                        <td> <input type="button" value="1" onclick="getValue('1')"></td>
+                        <td> <input type="button" value="2" onclick="getValue('2')"></td>
+                        <td> <input type="button" value="3" onclick="getValue('3')"></td>
+                        <td> <input type="button" value="+" onclick="getValue('+')"></td>
+                    </tr>
+
+                    <!-- Row 2 -->
+                     <tr>
+                        <td> <input type="button" value="4" onclick="getValue('4')"></td>
+                        <td> <input type="button" value="5" onclick="getValue('5')"></td>
+                        <td> <input type="button" value="6" onclick="getValue('6')"></td>
+                        <td> <input type="button" value="-" onclick="getValue('-')"></td>
+                     </tr>
+
+                     <!-- Row 3 -->
+                     <tr>
+                        <td> <input type="button" value="7" onclick="getValue('7')"></td>
+                        <td> <input type="button" value="8" onclick="getValue('8')"></td>
+                        <td> <input type="button" value="9" onclick="getValue('9')"></td>
+                        <td> <input type="button" value="*" onclick="getValue('*')"></td>
+                     </tr>
+
+                     <!-- Row 4 -->
+                     <tr>
+                        <td> <input type="button" value="." onclick="getValue('.')"></td>
+                        <td> <input type="button" value="0" onclick="getValue('0')"></td>
+                        <td> <input type="button" value="=" onclick="calculateResult()"></td>
+                        <td> <input type="button" value="/" onclick="getValue('/')"></td>
+                     </tr>
+
+            </table>
+
+    </div>
+    
+</body>
+</html>
